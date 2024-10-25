@@ -1,0 +1,13 @@
+[package]
+name = "verify-attestation"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+nitro-enclave-attestation-document = { git = "https://github.com/TonyGiorgio/nitro-enclave-attestation-document.git", rev = "1e513ae6a9edb6ebbd821b54eb418cef6fd2d7f8" }
+reqwest = { version = "0.11", features = ["json"] }
+tokio = { version = "1.0", features = ["full"] }
+base64 = "0.21"
+serde_json = "1.0"
